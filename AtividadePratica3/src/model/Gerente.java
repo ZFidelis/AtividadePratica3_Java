@@ -39,10 +39,22 @@ public class Gerente extends Funcionario implements Trabalhavel {
     //#endregion
 
     //#region Métodos
-    @Override
+    @Override //vem da superclasse Funcionario()
     public float calcularSalario() {
         float salario = (valorHora * horasTrabalhadas) + bonusSalarial;
         return salario;
+    }
+
+    @Override //vem da interface Trabalhavel()
+    public String trabalhar() {
+        String text = "O Gerente " + getNome() + " iniciou o gerenciamento do " + timeGerenciado;
+        return text;
+    }
+
+    @Override//vem da interface Trabalhavel()
+    public String relatarProgresso() {
+        String text = "Segundo o " + getNome() + ", o trabalho atual do time " + timeGerenciado + " esta em 54% de progresso";
+        return text;
     }
     //#endregion
 
