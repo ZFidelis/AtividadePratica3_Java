@@ -1,6 +1,6 @@
 package model;
 
-public class Estagiario extends Funcionario implements Trabalhavel {
+public class Estagiario extends Funcionario {
     
     //#region Atributos
     private String supervisor;

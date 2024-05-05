@@ -1,6 +1,6 @@
 package model;
 
-public class Desenvolvedor extends Funcionario implements Trabalhavel {
+public class Desenvolvedor extends Funcionario {
     
     //#region Atributos
     private String linguagemPreferida;
